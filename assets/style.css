@@ -24,10 +24,23 @@ nav {
     text-align: center;
 }
 
-.links li {
-    list-style: none;
-    border-left: 1px solid #bbb;
-}
+ul {
+    list-style:none;
+  }
+  ul li{
+    display:inline-block; 
+    padding:0 7px; 
+    position:relative;
+  }
+  ul li:not(:last-child)::after{
+    content:""; 
+    border:1px solid #e2e2e2;
+    border-width: 1px 1px 0 0;
+    position:absolute; 
+    right:-3px; 
+    top:0; 
+    height:100%;
+  }
 
 .header{
     color: #ffffff;
